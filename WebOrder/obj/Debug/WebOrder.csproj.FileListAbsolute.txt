@@ -1,0 +1,8 @@
+c:\temp\WebOrder\WebOrder\bin\Debug\WebOrder.exe.config
+c:\temp\WebOrder\WebOrder\bin\Debug\WebOrder.exe
+c:\temp\WebOrder\WebOrder\bin\Debug\WebOrder.pdb
+c:\temp\WebOrder\WebOrder\bin\Debug\Rebus.dll
+c:\temp\WebOrder\WebOrder\bin\Debug\Rebus.xml
+c:\temp\WebOrder\WebOrder\obj\Debug\WebOrder.csprojResolveAssemblyReference.cache
+c:\temp\WebOrder\WebOrder\obj\Debug\WebOrder.exe
+c:\temp\WebOrder\WebOrder\obj\Debug\WebOrder.pdb
