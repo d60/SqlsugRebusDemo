@@ -14,11 +14,11 @@ namespace WebOrder
 
         static void Main()
         {
-            using (var builtinContainerAdapter = new BuiltinContainerAdapter())
+            using (var adapter = new BuiltinContainerAdapter())
             {
-                builtinContainerAdapter.Register(() => new OrderSaga(builtinContainerAdapter.Bus));
+                adapter.Register(() => new OrderSaga(adapter.Bus));
 
-                var bus = Configure.With(builtinContainerAdapter)
+                var bus = Configure.With(adapter)
                     .Logging(l => l.ColoredConsole(minLevel: LogLevel.Warn))
                     .Transport(t => t.UseSqlServer(Conn, "RebusMessages", "OrderQueue", "Error").EnsureTableIsCreated())
                     .Sagas(s => s.StoreInSqlServer(Conn, "OrderSagas", "OrderSagasIndex").EnsureTablesAreCreated())

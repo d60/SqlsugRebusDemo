@@ -32,6 +32,7 @@ namespace WebOrder.Handlers
         public void Handle(CancelOrder message)
         {
             Console.WriteLine("Order {0} cancelled!", Data.OrderId);
+            MarkAsComplete();
         }
 
         public void Handle(FinalizeOrder message)
